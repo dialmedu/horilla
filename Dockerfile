@@ -8,6 +8,8 @@ WORKDIR /app/
 
 COPY . .
 
+COPY horilla/ horilla/
+
 RUN chmod +x /app/entrypoint.sh
 
 RUN pip install -r requirements.txt
